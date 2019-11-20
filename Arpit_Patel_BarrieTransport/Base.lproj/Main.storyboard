@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,59 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Arpit_Patel_BarrieTransport" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ioM-gD-clm">
+                                <rect key="frame" x="0.0" y="74" width="414" height="822"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arpit Patel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D70-Jh-Cpe">
+                                <rect key="frame" x="20" y="833" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barrie Transport Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3h-VJ-dFf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Z3h-VJ-dFf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6mY-kI-AjA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D70-Jh-Cpe" secondAttribute="trailing" id="Ajc-nK-Hko"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="D70-Jh-Cpe" secondAttribute="bottom" id="E6c-7J-CwE"/>
+                            <constraint firstItem="ioM-gD-clm" firstAttribute="top" secondItem="Z3h-VJ-dFf" secondAttribute="bottom" id="Gvh-Xc-I9w"/>
+                            <constraint firstItem="Z3h-VJ-dFf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HrA-mR-QXT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z3h-VJ-dFf" secondAttribute="trailing" id="JJ7-C1-BlA"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ioM-gD-clm" secondAttribute="bottom" constant="-34" id="NIr-KU-ahH"/>
+                            <constraint firstItem="D70-Jh-Cpe" firstAttribute="top" secondItem="Z3h-VJ-dFf" secondAttribute="bottom" constant="759" id="SKO-Rg-5hQ"/>
+                            <constraint firstItem="Z3h-VJ-dFf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="STP-tO-Ndo"/>
+                            <constraint firstItem="Z3h-VJ-dFf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TxL-Cs-GdU"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="D70-Jh-Cpe" secondAttribute="bottom" id="WAA-So-hUp"/>
+                            <constraint firstItem="ioM-gD-clm" firstAttribute="trailing" secondItem="Z3h-VJ-dFf" secondAttribute="trailing" id="aXc-Jz-YmJ"/>
+                            <constraint firstItem="Z3h-VJ-dFf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mbj-Ro-kdF"/>
+                            <constraint firstItem="D70-Jh-Cpe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="n6y-M4-tip"/>
+                            <constraint firstItem="Z3h-VJ-dFf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ovM-DJ-oy8"/>
+                            <constraint firstItem="D70-Jh-Cpe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pDe-uq-YJN"/>
+                            <constraint firstItem="ioM-gD-clm" firstAttribute="leading" secondItem="Z3h-VJ-dFf" secondAttribute="leading" id="sDg-iQ-ggZ"/>
+                            <constraint firstItem="Z3h-VJ-dFf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="u8i-LA-qFF"/>
+                            <constraint firstItem="D70-Jh-Cpe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xme-Vd-oYD"/>
+                            <constraint firstItem="Z3h-VJ-dFf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zam-9P-xUH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="ioM-gD-clm" id="Jds-y2-pIJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
